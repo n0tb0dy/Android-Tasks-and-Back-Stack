@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ap0003"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.ap0003.ActivityA"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.ap0003.ActivityB"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="AP0003_ActB" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.ap0003.ActivityC"
+            android:label="@string/app_name"
+            android:launchMode="singleTask" >
+            <intent-filter>
+                <action android:name="AP0003_ActC" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.ap0003.ActivityD"
+            android:label="@string/app_name"
+            android:launchMode="singleTop" >
+            <intent-filter>
+                <action android:name="AP0003_ActD" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.ap0003.ActivityE"
+            android:allowTaskReparenting="true"
+            android:label="@string/app_name"
+            android:taskAffinity="com.example.ap0004" >
+            <intent-filter>
+                <action android:name="AP0003_ActE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.ap0003.ActivityF"
+            android:label="@string/app_name"
+            android:taskAffinity="com.example.ap0004" >
+            <intent-filter>
+                <action android:name="AP0003_ActF" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.ap0003.ActivityG"
+            android:allowTaskReparenting="true"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="AP0003_ActG" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.ap0003.ActivityH"
+            android:finishOnTaskLaunch="true"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="AP0003_ActH" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.ap0003.ActivityK"
+            android:label="@string/app_name"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="AP0003_ActK" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.ap0003.ActivityI"
+            android:finishOnCloseSystemDialogs="true"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="AP0003_ActI" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.ap0003.ActivityJ"
+            android:label="@string/app_name"
+            android:stateNotNeeded="true" >
+            <intent-filter>
+                <action android:name="AP0003_ActJ" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.ap0003.ActivityL"
+            android:excludeFromRecents="true"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="AP0003_ActL" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

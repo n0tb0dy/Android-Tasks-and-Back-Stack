@@ -1,0 +1,132 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#faf20d"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".ActivityB" >
+
+    <Button
+        android:id="@+id/buttonStartC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClickStartC"
+        android:text="Start Activity C" />
+
+    <TextView
+        android:id="@+id/textStateActB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonStartC"
+        android:layout_below="@+id/buttonStartC"
+        android:background="#fffcfc"
+        android:text="Этот экземпляр АсtivityB запущен в первый раз" />
+
+    <TextView
+        android:id="@+id/textActCountB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textStateActB"
+        android:layout_below="@+id/textStateActB"
+        android:layout_marginTop="14dp"
+        android:background="#fffcfc"
+        android:text="TextView" />
+
+    <EditText
+        android:id="@+id/editTextB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textActCountB"
+        android:layout_below="@+id/textActCountB"
+        android:layout_marginTop="14dp"
+        android:background="#fcf5ab"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/buttonCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextB"
+        android:layout_centerVertical="true"
+        android:onClick="onClickCount"
+        android:text="Count" />
+
+    <TextView
+        android:id="@+id/textViewCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/buttonCount"
+        android:text="Count=" />
+
+    <Button
+        android:id="@+id/buttonInfoB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/buttonStartC"
+        android:layout_toRightOf="@+id/buttonStartC"
+        android:onClick="onInfoClick"
+        android:text="Info" />
+
+    <Button
+        android:id="@+id/buttonStartH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonCount"
+        android:layout_below="@+id/buttonCount"
+        android:layout_marginTop="17dp"
+        android:onClick="onClickStartH"
+        android:text="Start Activity H" />
+
+    <Button
+        android:id="@+id/buttonStartI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonStartH"
+        android:layout_alignBottom="@+id/buttonStartH"
+        android:layout_toRightOf="@+id/buttonStartH"
+        android:onClick="onClickStartI"
+        android:text="Start Activity I" />
+
+    <Button
+        android:id="@+id/buttonStartK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/buttonStartC"
+        android:layout_below="@+id/buttonStartH"
+        android:onClick="onClickStartK"
+        android:text="Start Activity K" />
+
+    <Button
+        android:id="@+id/buttonStartJ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonStartI"
+        android:layout_alignRight="@+id/textStateActB"
+        android:layout_below="@+id/buttonStartI"
+        android:onClick="onClickStartJ"
+        android:text="Start Activity J"
+        android:textSize="17sp" />
+
+    <Button
+        android:id="@+id/buttonStartCAP0003"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonStartK"
+        android:layout_below="@+id/buttonStartK"
+        android:onClick="onClickStartC0004"
+        android:text="Start Act C AP0004 ClearTask" />
+
+    <Button
+        android:id="@+id/buttonStartCHAP0004"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextB"
+        android:layout_toRightOf="@+id/buttonCount"
+        android:onClick="onClickStartBH0004"
+        android:text="Act B AP0004 OnHome" />
+
+</RelativeLayout>

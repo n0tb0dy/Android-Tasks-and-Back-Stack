@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ed884e"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".ActivityC" >
+
+    <Button
+        android:id="@+id/buttonStartA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClickStartA"
+        android:text="Start Activity A" />
+
+    <TextView
+        android:id="@+id/textStateActF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonStartA"
+        android:layout_below="@+id/buttonStartA"
+        android:layout_marginTop="16dp"
+        android:background="#fffcfc"
+        android:text="Этот экземпляр АсtivityE запущен в первый раз" />
+
+    <TextView
+        android:id="@+id/textActCountF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/textStateActF"
+        android:layout_below="@+id/textStateActF"
+        android:layout_marginTop="14dp"
+        android:background="#fffcfc"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/buttonInfoE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonStartA"
+        android:layout_alignBottom="@+id/buttonStartA"
+        android:layout_toRightOf="@+id/buttonStartA"
+        android:onClick="onInfoClick"
+        android:text="Info" />
+
+    <EditText
+        android:id="@+id/editTextF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textActCountF"
+        android:layout_below="@+id/textActCountF"
+        android:layout_marginTop="19dp"
+        android:background="#fffcfc"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+</RelativeLayout>
