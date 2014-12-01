@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AP0004</string>
+    <string name="action_settings">Settings</string>
+    <string name="strA">ACTIVITY A</string>
+    <string name="strB">ACTIVITY B</string>
+    <string name="strC">ACTIVITY C</string>
+    <string name="strD">Activity D</string>
+
+</resources>
