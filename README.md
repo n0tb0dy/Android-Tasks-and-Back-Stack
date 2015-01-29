@@ -4,6 +4,13 @@ LearnAndroid
 Приложения AP0003 и AP0004 для Android
 с моего блога http://pr0andr0id.blogspot.ru/
 
+В них подробно рассмотрены почти все возможные варианты
+Tasks and Back Stack
+
+То есть все возможные варианты описанные в этой статье
+http://developer.android.com/guide/components/tasks-and-back-stack.html
+и не только они, а гораздо больше.
+
 Исходники писались в Eclipse
 
 Кодировка исходников windows-1251
